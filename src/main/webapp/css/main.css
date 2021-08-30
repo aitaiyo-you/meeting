@@ -1,0 +1,234 @@
+.sidebar-wrap{float: left;width: 189px;min-height:700px;background: #f2f2f2;border-right:1px solid #ccc;/*cursor:e-resize;*/}
+.main-wrap{margin-left: 190px;min-height:100%; height: 660px;}
+.sidebar-title{height: 40px;line-height: 40px;text-indent:1em;font-size: 24px;text-align: left;}
+.sidebar-title h1{font-weight: normal;}
+.sidebar-content{padding-top: 5px;}
+.sidebar-list li{border:1px solid #e5e5e5;border-width:1px 0;}
+.sidebar-list li .icon-font{margin-right: 5px;color: #888;font-size: 14px;}
+.sidebar-list li a{padding: 0 16px 0 20px;display: block;height: 38px;line-height: 38px;color: #333;}
+.sidebar-list li form button{padding: 0 16px 0 20px;display: block;height: 38px;line-height: 38px;color: #333;}
+.sidebar-list li a:hover{background: #fff;color: #1963AA;}
+.sub-menu{border-top: 1px solid #e5e5e5;background: #fff;}
+.sub-menu li{padding-left: 21px;}
+.sub-menu li.on{background: #1963AA;}
+.sub-menu li.on a{background: #1963AA;color: #fff;}
+.sub-menu li.on form button{background: #1963AA;color: #fff;}
+.sub-menu li.on .icon-font{color: #fff;}
+.sub-menu .icon-font{font-size: 11px;}
+/* main */
+.crumb-wrap{height: 40px;line-height: 39px;border-bottom: 1px solid #e5e5e5;background: #f5f5f5;}
+.crumb-list{padding-left: 12px;}
+.crumb-list .icon-font{margin-right: 5px;}
+.crumb-step{margin: 0 5px;color: #b2c2e0;font-family: serif;}
+.search-wrap{padding: 15px 0;border-bottom: 1px solid #e5e5e5;}
+.search-tab tr{line-height: 35px;}
+.search-tab th{text-align: right;padding-right:10px;font-weight: normal;}
+.search-tab td{padding: 0 5px;}
+.common-text{height: 23px;line-height: 23px;padding: 2px 4px;border: 1px solid #ccc;background: #fff;border-radius:5px;}
+.result-wrap{padding:10px 20px;border-bottom: 1px solid #e5e5e5;}
+.result-title{line-height: 35px;padding-bottom: 5px;overflow: hidden;}
+.comment-title{line-height: 35px;margin-bottom: 10px;overflow: hidden;}
+.result-list a{margin-right: 15px;}
+.result-list i{padding-right: 5px;}
+.result-tab{border-collapse:collapse;border: 1px solid #ddd;}
+.result-tab th{font-weight: normal;font-size: 15px;text-align: left;background: url(../images/tab-thbg.png) #f9f9f9 0 bottom repeat-x;}
+.result-tab th,.result-tab td{padding:5px;border-bottom: 1px solid #ddd;border-right: 1px solid #e1e1e1;}
+.result-tab tr{line-height:35px;}
+.result-tab th.tc,.result-tab td.tc{text-align: center;}
+.result-tab tr:nth-child(odd){background: #f9f9f9;}
+.result-tab tr:hover{background: #f1f1f1;}
+.result-tab tr.even-tr{background: #e9fff2;}
+.comment-tab{border-bottom: 1px solid #ddd;padding-left: 15px;margin-bottom: 10px;}
+.comment-tab a{float: left;}
+.comment-tab a.on{padding: 0 15px;background: #49afcd;color: #fff;border-radius:5px 5px 0 0;}
+/* config */
+.config-items{margin-bottom: 25px;}
+.config-title{margin-bottom: 10px;}
+.config-title h1{font-size: 14px;font-weight: normal;}
+.config-title h1 i{margin-right: 5px;font-size: 12px;}
+.columns-title{padding: 10px 0;height: 35px;line-height: 35px;overflow: hidden;}
+/*.columns-title .comment-tab{padding-left: 0;}*/
+.visitor-img{float: left;}
+.visitor-info{float: left;padding-left: 10px;line-height:23px;}
+.visitor-email{color: #aaa;}
+.short-wrap a{margin-right: 20px;}
+.short-wrap a i{margin-right: 5px;}
+.res-lab{display: inline-block;width: 150px;padding-right: 10px;text-align: right;}
+.sys-info-list li{line-height: 35px;border-bottom: 1px dashed #eaeaea;}
+.res-lab{color: #909090;}
+.res-info{font-size: 15px;}
+.sort-input{width: 25px;text-align: center;}
+
+/*新增面板布局*/
+.user_detail_page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    user-select: none;
+}
+.user_detail_bg {
+    width: 100%;
+    height: 100%;
+}
+.user_detail_content {
+    background-color: white;
+    width: 500px;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 20px 3px;
+    border: rgb(0, 0, 0) solid 1px;
+    transition: 400ms, top 0ms, left 0ms;
+    transition-timing-function: ease-in-out;
+}
+
+.user_detail_top {
+    width: 100%;
+    height: 50px;
+    border-bottom: rgb(0,0,0) solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_detail_title {
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+    padding: 0 20px;
+}
+.user_detail_close {
+    color: red;
+    font-size: 24px;
+    padding: 5px 20px;
+    background-color: white;
+    transition: 400ms;
+    cursor: pointer;
+}
+.user_detail_close:hover {
+    color: white;
+    background-color: red;
+}
+.user_detail_text {
+    width: 35%;
+    float: left;
+}
+.user_detail_name {
+    width: 100%;
+    height: 27px;
+    padding: 1px;
+    text-align: right;
+    margin: 0 auto;
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.user_detail_edit {
+    width: 65%;
+    float: right;
+}
+.user_detail_button {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+}
+.error-tip {
+    font-size: 10px;
+    color: red;
+    line-height: 29px;
+    padding-left: 10px;
+}
+.meetingItem-intro {
+    max-width: 450px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.meeting-name {
+    margin-top: 30px;
+    width: 100%;
+    height: 28px;
+    padding: 1px;
+    text-align: center;
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.meeting-address {
+    margin-top: 15px;
+    width: 100%;
+    height: 28px;
+    padding: 1px;
+    text-align: center;
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.meeting-end {
+    width: 100%;
+    height: 28px;
+    padding: 1px;
+    text-align: center;
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.meeting-date {
+    height: 23px;
+    width: 140px;
+    line-height: 23px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius:5px;
+}
+.meeting-time {
+    height: 23px;
+    width: 80px;
+    line-height: 23px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius:5px;
+}
+.meeting-intro {
+    margin-top: 15px;
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    color: rgb(0,0,0);
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.error-time {
+    height: 15px;
+    font-size: 10px;
+    color: red;
+    line-height: 15px;
+    text-align: center;
+}
+.comment-area {
+    height: 23px;
+    line-height: 23px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius:5px;
+}
+.background-wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/back.jpg");
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+}
